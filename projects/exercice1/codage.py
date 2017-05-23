@@ -1,2 +1,7 @@
-def to_upper(string):
-    return string.upper()
+
+size = int(input())
+
+def creer_chromosome():
+    return ""
+    
+    
