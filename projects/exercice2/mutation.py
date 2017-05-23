@@ -3,9 +3,6 @@ from secret import alphabet
 
 def get_letter():
     return ord(random.choice(alphabet))
-
-size = int(input())
-
-def creer_chromosome():
-    return bytearray()
     
+def mutation(chrom):
+    pass

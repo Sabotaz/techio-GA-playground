@@ -7,5 +7,7 @@ def get_letter():
 size = int(input())
 
 def creer_chromosome():
-    return bytearray()
+    return bytearray(get_letter() for _ in range(size))
+    
+    
     
