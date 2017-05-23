@@ -1,6 +1,12 @@
-title : Content name
+title : Algorithmes génétiques
 plan:
-  - title: Part 1
+  - title: Historique
     statement: markdowns/part1.md
-  - title: Part 2
+  - title: Codage
     statement: markdowns/part2.md
+  - title: Outils
+    statement: markdowns/part3.md
+  - title: Sélection
+    statement: markdowns/part4.md
+  - title: Algorithme
+    statement: markdowns/part5.md
