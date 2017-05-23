@@ -32,24 +32,24 @@ class SelectionTest(unittest.TestCase):
         
         blob = [_("truc"), _("plop"), _("caca"), _("chei"), _("tric"), _("fuck")]
         
-        import tools
+        import selection
         import secret
         
-        selection = tools.selection(blob)
-        for x in selection:
+        select = selection.selection(blob)
+        for x in select:
             self.assertIn(x, blob, "création de nouveaux chromosomes interdite")
         
-        self.assertTrue(len(selection) >= 2, "pas assez de chromosomes selectionnés")
-        self.assertTrue(len(selection) < len(blob), "trop de chromosomes selectionnés")
-        self.assertTrue(secret.get_mean_rang(selection) >= secret.get_mean_rang(blob), "la selection n'est pas assez bonne")
+        self.assertTrue(len(select) >= 2, "pas assez de chromosomes selectionnés")
+        self.assertTrue(len(select) < len(blob), "trop de chromosomes selectionnés")
+        self.assertTrue(secret.get_mean_rang(select) >= secret.get_mean_rang(blob), "la selection n'est pas assez bonne")
         
 @ddt
 class CroisementTest(unittest.TestCase):
     @data((_("abcd"), _("efgh")),(_("abcde"), _("fghij")))
     @unpack
     def test_croisement(self, chrom1, chrom2):
-        import tools
-        chrom3 = tools.croisement(chrom1, chrom2)
+        import croisement
+        chrom3 = croisement.croisement(chrom1, chrom2)
         
         self.assertEqual(len(chrom1), len(chrom3))
         
@@ -71,10 +71,10 @@ class MutationTest(unittest.TestCase):
     def test_mutation(self, chrom2):
     
         import copy
-        import tools
+        import mutation
         
         chrom1 = copy.copy(chrom2)
-        tools.mutation(chrom2)
+        mutation.mutation(chrom2)
         
         self.assertTrue(type(chrom2) == bytearray)
         self.assertEqual(len(chrom1), len(chrom2))
