@@ -17,7 +17,7 @@ def capture(command, *args, **kwargs):
         sys.stdout = out
         
 @ddt
-class StringTests(unittest.TestCase):
+class ChromosomeTest(unittest.TestCase):
         
     def tearDown(self):
         try:
@@ -26,10 +26,14 @@ class StringTests(unittest.TestCase):
             pass
             
     @data(38, 42, 72)
-    def test_creer_chromosome(self, value):
+    def test_type_chromosome(self, value):
         with patch('builtins.input', lambda: str(value)):
             import codage
-            
-            self.assertEqual(value, len(codage.creer_chromosome()))
             self.assertTrue(type(codage.creer_chromosome()) == str)
+            
+    @data(38, 42, 72)
+    def test_size_chromosome(self, value):
+        with patch('builtins.input', lambda: str(value)):
+            import codage
+            self.assertEqual(value, len(codage.creer_chromosome()))
             
