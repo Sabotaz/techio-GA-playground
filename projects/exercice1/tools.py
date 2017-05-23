@@ -1,5 +1,4 @@
 import random
-from string import ascii_letters
 import secret
 from secret import alphabet
 
@@ -11,7 +10,7 @@ def rang(chrom):
     return secret.get_rang(chrom)
     
 def selection(chromlist):
-    chromlist.sort(key = rang)
+    chromlist.sort(key = rang, reverse = True)
     ind = int(len(chromlist) * 0.3)
     nb_others = int(len(chromlist) * 0.2)
     betters = chromlist[:ind]
