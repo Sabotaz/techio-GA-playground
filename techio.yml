@@ -14,15 +14,15 @@ projects:
   exercice1:
     root: /projects/exercice1
     runner:
-      name: codingame/python3-unittest-runner
+      name: techio/python3-unittest-runner
       version: 1.1.0-python-3.6
   exercice2:
     root: /projects/exercice2
     runner:
-      name: codingame/python3-unittest-runner
+      name: techio/python3-unittest-runner
       version: 1.1.0-python-3.6
   projet:
     root: /projects/projet
     runner:
-      name: codingame/python3-unittest-runner
+      name: techio/python3-unittest-runner
       version: 1.1.0-python-3.6
