@@ -5,7 +5,7 @@ Le but de l'exercice va être de deviner une chaine de caractère.
 ```python
 alphabet = string.ascii_letters + " !'."
 ```
-Il y a 56 caractères autorisés. Pour une chaine de caractère de longueur 100, il faudrait `6.59.10^{+174}` essais pour tester toutes les solutions possibles !
+Il y a 56 caractères autorisés. Pour une chaine de caractère de longueur 100, il faudrait $`6.59.10^{+174}`$ essais pour tester toutes les solutions possibles !
 
 Nous allons donc créer un algorithme génétique pour deviner la solution, à partir de deux informations :
  * la taille de la chaine de caractères
