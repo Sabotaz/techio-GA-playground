@@ -16,16 +16,25 @@ La première étape est de créer des individus, afin de constituer notre popula
 Un chromosome se compose d'un ensemble de gènes. Plusieurs codages sont possibles :
  * codage binaire : une chaîne de bits (0 ou 1)
  * codage à caractères multiples : une chaîne de caractères
+ 
 Un des principaux intérets du codage binaire est de permettre un plus grand brassage génétique.
+
 En effet, lors de la phase de croisement, on dispose d'une plus grande granularité pour le lieu du croisement.
+
 Mais ce codage est peu naturel, et peu adapté au codage des données réels (par exemple, la modification de certains bits d'un nombre flottant peut créer des valeurs invalides).
+
 Dans la pratique, on utilisera un codage différent suivant le type de problème à résoudre.
 
-Problème du sac à dos :
+ * Problème du sac à dos :
+ 
 `0110001`, chaque bit indique si oui ou non l'objet a été placé dans le sac.
-Diriger un robot [(mars lander)](https://www.codingame.com/training/easy/mars-lander-episode-1):
-`[float, int, float, int, float, int...] l'angle (-90° à 90°) et la puissance des fusées (0 à 4) à chaque tour.
-Trouver une chaine de caractères :
+
+ * Diriger un robot [(mars lander)](https://www.codingame.com/training/easy/mars-lander-episode-1):
+ 
+`[float, int, float, int, float, int...]` l'angle (-90° à 90°) et la puissance des fusées (0 à 4) à chaque tour.
+
+ * Trouver une chaine de caractères :
+
 `"Aoljfon oaezn"`, chaque caractère indique un caractère de la chaîne à trouver.
 
 Pour l'exercice suivant, le chromosome sera stoqué sous la forme d'une `bytearray`.
