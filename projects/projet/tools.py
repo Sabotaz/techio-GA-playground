@@ -5,12 +5,12 @@ from secret import alphabet
 def get_letter():
     return ord(random.choice(alphabet))
     
-def rang(chrom):
+def score(chrom):
     # [0..1] suivant si le chromosome est mauvais ou bon
-    return secret.get_rang(chrom)
+    return secret.get_score(chrom)
     
 def selection(chromlist):
-    chromlist.sort(key = rang, reverse = True)
+    chromlist.sort(key = score, reverse = True)
     ind = int(len(chromlist) * 0.3)
     nb_others = int(len(chromlist) * 0.2)
     betters = chromlist[:ind]

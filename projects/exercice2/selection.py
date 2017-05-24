@@ -1,9 +1,9 @@
 import random
-from secret import get_rang
+from secret import get_score
     
-def rang(chrom):
+def score(chrom):
     # [0..1] suivant si le chromosome est mauvais ou bon
-    return get_rang(chrom)
+    return get_score(chrom)
     
 def selection(chromosomes_list):
     return []
