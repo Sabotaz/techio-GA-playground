@@ -19,8 +19,8 @@ def capture(command, *args, **kwargs):
         sys.stdout = out
         
 def test_is_chromosome(cls, chrom, size):
-    cls.assertIsInstance(chrom, bytearray)
-    cls.assertEqual(len(chrom), size)
+    cls.assertIsInstance(chrom, bytearray, "le chromosome n'a pas le bon type")
+    cls.assertEqual(len(chrom), size, "le chromosome n'a pas la bonne taille")
     
 @ddt
 class ChromosomeTest(unittest.TestCase):
