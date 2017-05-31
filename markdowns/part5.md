@@ -10,8 +10,8 @@ Chaque individu a une probabilité d'être tiré proportionnelle à son adaptati
 4. Reproduction  
 Des couples sont tirés au hasard parmis la population sélectionnée. Chaque couple donne un nouvel individu.
 La population totale peut rester constante au court du temps (autant d'individus à chaque générations) ou varier.
-  
-par ex:
+
+À chaque reproduction :
  * Croisement  
 Le matériel génétique de l'enfant est une combinaison du matériel génétique des parents
 (généralement, 50% du matériel génétique de chaque parent).
