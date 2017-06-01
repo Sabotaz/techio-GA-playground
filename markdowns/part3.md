@@ -16,7 +16,12 @@ Ce sont des outils qui agiront directement sur le matériel génétique de chaqu
 Nous devons ensuite compléter notre population avec une nouvelle génération.
 Pour créer cette génération, nous allons effectuer des croisements sur la population.
 Lors d'un croisement, les deux parents vont échanger leur matériel génétique pour créer un enfant.
+
+![Croisement entre deux chromosomes](/img/OnePointCrossover.svg "Croisement entre deux chromosomes")
+
 Une solution est de prendre 50% du matériel génétique de chaque parent.
+
+![Croisement en deux points](/img/Computational.science.Genetic.algorithm.Crossover.Two.Point.svg "Croisement en deux points")
 
 @[Croisement des chromosomes]({"stubs":["croisement.py"], "command":"tools_tests.CroisementTest", "project":"exercice2"})
 
