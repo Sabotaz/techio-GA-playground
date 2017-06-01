@@ -5,10 +5,7 @@ from secret import est_solution
 from codage import creer_chromosome
 from tools import selection, croisement, mutation
 
-size = int(input())
-population_size = 0
-
-def creer_population():
+def creer_population(pop_size, chrom_size):
     chrom = creer_chromosome(size)
     return []
     
@@ -31,7 +28,10 @@ def generation(population):
 
 def algorithme():
     # créer la population
-    creer_population()
+    chrom_size = int(input())
+    population_size = 0
+    
+    creer_population(population_size, chrom_size)
     
     solutions = []
     
