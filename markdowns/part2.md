@@ -1,3 +1,7 @@
+# Individus, chromosomes et gènes
+
+![Gènes du chromosome 16 humain](/img/Human_chromosome_16_with_ASD_genes_from_IJMS-16-06464.png "Gènes du chromosome 16 humain")
+
 # Présentation du problème
 Pour illustrer ce cours, nous allons prendre un exemple concret.
 Le but de l'exercice va être de deviner une chaine de caractère.
