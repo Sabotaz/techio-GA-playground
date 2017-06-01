@@ -1,6 +1,7 @@
 # coding: utf-8
 import unittest
 from ddt import ddt, data, unpack
+import os
 
         
 def test_is_chromosome(cls, chrom, size):
