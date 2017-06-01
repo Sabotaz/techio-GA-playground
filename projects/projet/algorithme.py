@@ -1,5 +1,5 @@
 import random
-from secret import est_solution
+from solution import est_solution
 # Vous pouvez redéfinir ces fonctions avec celles que vous avez écrites précédemment.
 # Une implémentation différente est fournie.
 from codage import creer_chromosome

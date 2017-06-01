@@ -1,13 +1,12 @@
 import random
-import secret
-from secret import alphabet
+from solution import alphabet, get_score
 
 def get_letter():
     return ord(random.choice(alphabet))
     
 def score(chrom):
     # [0..1] suivant si le chromosome est mauvais ou bon
-    return secret.get_score(chrom)
+    return get_score(chrom)
     
 def selection(chromlist):
     chromlist.sort(key = score, reverse = True)

@@ -1,5 +1,5 @@
 import random
-from secret import alphabet
+from solution import alphabet
 
 def get_letter():
     return ord(random.choice(alphabet))

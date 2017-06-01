@@ -1,5 +1,5 @@
 import random
-from secret import get_score
+from solution import get_score
     
 def score(chrom):
     # [0..1] suivant si le chromosome est mauvais ou bon
