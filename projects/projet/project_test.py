@@ -27,7 +27,7 @@ class ProjectTest(unittest.TestCase):
         except KeyError:
             pass
     
-    @data("Aidhf", "INnhGNIUnkhkHKIhil,lbKYUGNk,HBK")
+    @data("Aidhf", "INnhGNIUnkhkHKIhillbKYUGNkHBK")
     def test_algorithme(self, solution):
         os.environ["SECRET_KEY"] = solution
         with patch('builtins.input', lambda: str(len(solution))):
