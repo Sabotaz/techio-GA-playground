@@ -29,7 +29,7 @@ class SelectionTest(unittest.TestCase):
             _("jmmqRZgmfcszPtXxusSG")]
         
         import selection
-        import secret
+        import solution
         
         select = selection.selection(blob)
         for x in select:
@@ -37,7 +37,7 @@ class SelectionTest(unittest.TestCase):
         
         self.assertTrue(len(select) >= 2, "pas assez de chromosomes selectionnés")
         self.assertTrue(len(select) < len(blob), "trop de chromosomes selectionnés")
-        self.assertTrue(secret.get_mean_rang(select) >= secret.get_mean_rang(blob), "la selection n'est pas assez bonne")
+        self.assertTrue(solution.get_mean_rang(select) >= solution.get_mean_rang(blob), "la selection n'est pas assez bonne")
         
 @ddt
 class CroisementTest(unittest.TestCase):
