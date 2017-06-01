@@ -6,7 +6,7 @@ from codage import creer_chromosome
 from tools import selection, croisement, mutation
 
 size = int(input())
-population = 0
+population_size = 0
 
 def creer_population():
     chrom = creer_chromosome(size)
@@ -36,15 +36,10 @@ def algorithme():
     solutions = []
     
     # tant qu'une solution n'est pas trouvée:
-    import time
-    import sys
-    i = 0
     while not solutions:
     ## créer la generation suivante
         generation([])
-        time.sleep(0.01)
-        i += 0.01
-        print(i, file=sys.stderr)
+    
     ## vérifier si une solution est trouvée
         if est_solution(bytearray()):
             solutions.append(bytearray())

@@ -27,5 +27,5 @@ class ProjectTest(unittest.TestCase):
         with patch('builtins.input', lambda: str(len(solution))):
             import algorithme
             with capture(algorithme.algorithme) as output:
-                self.assertEquals("Expected output", solution)
+                self.assertEqual("Expected output", solution)
         

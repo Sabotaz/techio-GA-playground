@@ -18,5 +18,5 @@ def est_solution(chrom):
     return key == chrom.decode("ascii")
     
 def get_mean_score(population):
-    mean = sum(get_rang(chrom) for chrom in population)/len(population)
+    mean = sum(get_score(chrom) for chrom in population)/len(population)
     return mean
