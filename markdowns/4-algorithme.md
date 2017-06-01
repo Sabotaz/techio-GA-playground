@@ -5,7 +5,7 @@
 On génère une population initiale aléatoire. Chaque individu est représenté par son matériel génétique.
 On crée un nouvel individu à l'aide de la fonction `creer_chromosome(taille)` créée précédemment.
 2. Évaluation  
-Chaque individu est noté suivant son adaptation au problème.
+Chaque individu est noté suivant son adaptation au problème. Cette phase est effectuée au début de la sélection.
 3. Sélection  
 Chaque individu a une probabilité d'être tiré proportionnelle à son adaptation au problème.
 On ne garde que les individus sélectionnés par la fonction `selection(population)` créée précédemment.
@@ -21,7 +21,7 @@ Une fois les parents choisis, la fonction `croisement(parent1, parent2)` créée
 Probabilité : de 0.1% à 1%
 Pour chaque enfant, un gène est modifié au hasard, à l'aide de la fonction `mutation(chromosome)` créée précédemment.
 
-5. Enfin, la fonction `est_solution(chromosome)` permet de vérifier si un individu est une solution du problème (score de 100%).
+Enfin, la fonction `est_solution(chromosome)` permet de vérifier si un individu est une solution du problème (score de 100%).
 Si il n'y a pas de solution, on passe à la génération suivante (phase 2).
 
 @[Algorithme génétique]({"stubs":["algorithme.py"], "command":"project_test.ProjectTest", "project":"projet", "layout": "aside"})
