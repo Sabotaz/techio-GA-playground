@@ -33,5 +33,5 @@ class ProjectTest(unittest.TestCase):
         with patch('builtins.input', lambda: str(len(solution))):
             import algorithme
             with capture(algorithme.algorithme) as output:
-                self.assertEqual(output, solution)
+                self.assertTrue(output == solution, "ce chromosome n'est pas la solution")
         
