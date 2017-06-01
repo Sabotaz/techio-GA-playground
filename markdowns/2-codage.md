@@ -1,10 +1,14 @@
 # Individus, chromosomes et gènes
 
+Ces algorithmes sont basées sur l'évolution d'une population au cours du temps. Par analogie avec la biologie, chaque individu est décris par ses gènes, qui sont regroupés en chromosomes. Par facilité, nous utiliserons chromosome et individu alternativement pour désigner l'ensemble du matériel génétique de l'individu.
+
 ![Gènes du chromosome 16 humain](/img/Human_chromosome_16_with_ASD_genes_from_IJMS-16-06464.png "Gènes du chromosome 16 humain")
+
+L'humain a plusieurs chromosomes qui comportent chacun des miliers de gènes.
 
 # Présentation du problème
 Pour illustrer ce cours, nous allons prendre un exemple concret.
-Le but de l'exercice va être de deviner une chaine de caractère.
+Le but de l'exercice va être de deviner une chaine de caractère, par exemple `Mon mot de passe est difficile !` ou `IQlCqnWXVoVDDRFKFevaFzxmUxTxONwlLSwfkxmG`.
 
 ```python
 alphabet = string.ascii_letters + " !'."
@@ -39,7 +43,7 @@ Dans la pratique, on utilisera un codage différent suivant le type de problème
 
  * Trouver une chaine de caractères :
 
-`"Aoljfon oaezn"`, chaque caractère indique un caractère de la chaîne à trouver.
+`"Aoljfon oaeznFjlf"`, chaque caractère indique un caractère de la chaîne à trouver.
 
 Pour l'exercice suivant, le chromosome sera stoqué sous la forme d'une `bytearray`.
 
