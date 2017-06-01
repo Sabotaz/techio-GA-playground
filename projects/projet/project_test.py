@@ -20,6 +20,12 @@ def capture(command, *args, **kwargs):
 
 @ddt
 class ProjectTest(unittest.TestCase):
+
+    def tearDown(self):
+        try:
+            del sys.modules["algorithme"]
+        except KeyError:
+            pass
     
     @data("Aidhf", "INnhGNIUnkhkHKIhil,lbKYUGNk,HBK")
     def test_algorithme(self, solution):
