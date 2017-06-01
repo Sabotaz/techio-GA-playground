@@ -13,6 +13,10 @@ def get_score(chrom):
             score += 1
     return score / len(key)
     
+def est_solution(chrom):
+    key = os.environ['SECRET_KEY']
+    return key == chrom.decode("ascii")
+    
 def get_mean_score(population):
     mean = sum(get_rang(chrom) for chrom in population)/len(population)
     return mean

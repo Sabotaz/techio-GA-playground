@@ -17,85 +17,15 @@ def capture(command, *args, **kwargs):
         yield sys.stdout.read()
     finally:
         sys.stdout = out
-        
-def test_is_chromosome(cls, chrom, size):
-    cls.assertIsInstance(chrom, bytearray)
-    cls.assertEqual(len(chrom), size)
-@ddt
-class ChromosomeTest(unittest.TestCase):
-        
-    def tearDown(self):
-        try:
-            del sys.modules["codage"]
-        except KeyError:
-            pass
-            
-    @data(38, 42, 72)
-    def test_chromosome(self, value):
-        with patch('builtins.input', lambda: str(value)):
-            import codage
-            test_is_chromosome(self, codage.creer_chromosome(), value)
-            
-_ = lambda x: bytearray(x,"ascii")
 
 @ddt
-class ToolsTest(unittest.TestCase):
+class ProjectTest(unittest.TestCase):
     
-    def test_selection(self):
-        os.environ["SECRET_KEY"] = "blop"
+    @data("Aidhf", "INnhGNIUnkhkHKIhil,lbKYUGNk,HBK")
+    def test_algorithme(self, solution):
+        os.environ["SECRET_KEY"] = solution
+        with patch('builtins.input', lambda: str(len(solution))):
+            import algorithme
+            with capture(algorithme.algorithme) as output:
+                self.assertEquals("Expected output", solution)
         
-        blob = [_("truc"), _("plop"), _("caca"), _("chei"), _("tric"), _("fuck")]
-        
-        import tools
-        import secret
-        
-        selection = tools.selection(blob)
-        for x in selection:
-            self.assertIn(x, blob, "création de nouveaux chromosomes interdite")
-        
-        self.assertTrue(len(selection) >= 2, "pas assez de chromosomes selectionnés")
-        self.assertTrue(len(selection) < len(blob), "trop de chromosomes selectionnés")
-        self.assertTrue(secret.get_mean_rang(selection) >= secret.get_mean_rang(blob), "la selection n'est pas assez bonne")
-        
-    
-    @data((_("abcd"), _("efgh")),(_("abcde"), _("fghij")))
-    @unpack
-    def test_croisement(self, chrom1, chrom2):
-        import tools
-        chrom3 = tools.croisement(chrom1, chrom2)
-        
-        self.assertEqual(len(chrom1), len(chrom3))
-        
-        from1 = 0
-        from2 = 0
-        for x, a, b in zip(chrom3, chrom1, chrom2):
-            self.assertTrue(x == a or x == b)
-            if x == a:
-                from1 += 1
-            if x == b:
-                from2 += 1
-        self.assertTrue(from1 + from2 >= len(chrom3))
-        self.assertNotEqual(chrom1, chrom3)
-        self.assertNotEqual(chrom2, chrom3)
-    
-    @data(_("jkdjsfo"), _("jinailnfoe"))
-    def test_mutation(self, chrom2):
-    
-        import copy
-        import tools
-        
-        chrom1 = copy.copy(chrom2)
-        tools.mutation(chrom2)
-        
-        self.assertTrue(type(chrom2) == bytearray)
-        self.assertEqual(len(chrom1), len(chrom2))
-        
-        score = 0
-        for a, b in zip(chrom1, chrom2):
-            if a != b:
-                score += 1
-                
-        self.assertEqual(score, 1)
-        
-        
-    
