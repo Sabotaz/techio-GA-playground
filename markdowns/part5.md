@@ -3,20 +3,25 @@
 
 1. Génération de la population de base  
 On génère une population initiale aléatoire. Chaque individu est représenté par son matériel génétique.
+On crée un nouvel individu à l'aide de la fonction `creer_chromosome(taille)` créée précédemment.
 2. Évaluation  
 Chaque individu est noté suivant son adaptation au problème.
 3. Sélection  
 Chaque individu a une probabilité d'être tiré proportionnelle à son adaptation au problème.
+On ne garde que les individus sélectionnés par la fonction `selection(population)` créée précédemment.
 4. Reproduction  
 Des couples sont tirés au hasard parmis la population sélectionnée. Chaque couple donne un nouvel individu.
 La population totale peut rester constante au court du temps (autant d'individus à chaque générations) ou varier.
 
 À chaque reproduction :
  * Croisement  
-Le matériel génétique de l'enfant est une combinaison du matériel génétique des parents
-(généralement, 50% du matériel génétique de chaque parent).
+Le matériel génétique de l'enfant est une combinaison du matériel génétique des parents (généralement, 50% du matériel génétique de chaque parent).
+Une fois les parents choisis, la fonction `croisement(parent1, parent2)` créée précédemment permet de créer un enfant.
  * Mutation  
 Probabilité : de 0.1% à 1%
-Pour chaque enfant, un gène est modifié au hasard.
+Pour chaque enfant, un gène est modifié au hasard, à l'aide de la fonction `mutation(chromosome)` créée précédemment.
 
-@[Croisement des chromosomes]({"stubs":["algorithme.py"], "command":"project_test.ProjectTest", "project":"projet", "layout": "aside"})
+5. Enfin, la fonction `est_solution(chromosome)` permet de vérifier si un individu est une solution du problème (score de 100%).
+Si il n'y a pas de solution, on passe à la génération suivante (phase 2).
+
+@[Algorithme génétique]({"stubs":["algorithme.py"], "command":"project_test.ProjectTest", "project":"projet", "layout": "aside"})
