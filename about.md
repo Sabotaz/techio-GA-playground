@@ -1,3 +1,3 @@
-Ce cours présente les algorithmes génétiques, et propose de découvrir facilement les différentes étapes de cet algorithme.
+Ce cours prÃ©sente les algorithmes gÃ©nÃ©tiques, et propose de dÃ©couvrir facilement les diffÃ©rentes Ã©tapes de cet algorithme.
 
-Les outils à mettre en place sont expliqués pas à pas, et leur implémentation en python est guidée.
+Les outils Ã  mettre en place sont expliquÃ©s pas Ã  pas, et leur implÃ©mentation en python est guidÃ©e.
