@@ -49,7 +49,7 @@ class CroisementTest(unittest.TestCase):
         import croisement
         chrom3 = croisement.croisement(chrom1, chrom2)
         
-        test_is_chromosome(self, chrom3, len(chrom1)):
+        test_is_chromosome(self, chrom3, len(chrom1))
         
         from1 = 0
         from2 = 0
