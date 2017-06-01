@@ -22,5 +22,8 @@ def croisement(chrom_1, chrom_2):
     return chrom_1[:mid] + chrom_2[mid:]
     
 def mutation(chrom):
+    if len(chrom) == 0:
+        return chrom
+        
     i = random.randint(0,len(chrom)-1)
     chrom[i] = get_letter()

@@ -1,4 +1,5 @@
-﻿import random
+﻿
+import random
 from secret import est_solution
 # Vous pouvez redéfinir ces fonctions avec celles que vous avez écrites précédemment.
 # Une implémentation différente est fournie.
