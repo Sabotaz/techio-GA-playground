@@ -14,7 +14,9 @@ def capture(command, *args, **kwargs):
     try:
         command(*args, **kwargs)
         sys.stdout.seek(0)
-        yield sys.stdout.read().strip('\n')
+        out = sys.stdout.read().strip('\n')
+        print("STDOUT>" + out, file=sys.stderr)
+        yield out
     finally:
         sys.stdout = out
 
