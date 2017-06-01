@@ -1,7 +1,7 @@
-import random
+ï»¿import random
 from secret import est_solution
-# Vous pouvez redéfinir ces fonctions avec celles que vous avez écrites précédemment.
-# Une implémentation différente est fournie.
+# Vous pouvez redÃ©finir ces fonctions avec celles que vous avez Ã©crites prÃ©cÃ©demment.
+# Une implÃ©mentation diffÃ©rente est fournie.
 from codage import creer_chromosome
 from tools import selection, croisement, mutation
 
@@ -14,7 +14,7 @@ def creer_population():
     
 def generation(population):
 
-    # sélection
+    # sÃ©lection
     select = selection([])
     
     # reproduction
@@ -26,21 +26,21 @@ def generation(population):
     ## mutation
     mutation(bytearray())
     
-    # retourner la nouvelle génération
+    # retourner la nouvelle gÃ©nÃ©ration
     return []
 
 def algorithme():
-    # créer la population
+    # crÃ©er la population
     creer_population()
     
     solutions = []
     
-    # tant qu'une solution n'est pas trouvée:
+    # tant qu'une solution n'est pas trouvÃ©e:
     while not solutions:
-    ## créer la generation suivante
+    ## crÃ©er la generation suivante
         generation([])
     
-    ## vérifier si une solution est trouvée
+    ## vÃ©rifier si une solution est trouvÃ©e
         if est_solution(bytearray()):
             solutions.append(bytearray())
     
