@@ -13,9 +13,19 @@ _ = lambda x: bytearray(x,"ascii")
 class SelectionTest(unittest.TestCase):
     
     def test_selection(self):
-        os.environ["SECRET_KEY"] = "blop"
+        os.environ["SECRET_KEY"] = "grqFWIhIDmOmyDsPkbBY"
         
-        blob = [_("truc"), _("plop"), _("caca"), _("chei"), _("tric"), _("fuck")]
+        blob = [
+            _("nRLTPNabIglNSDsPkbBY"),
+            _("KVlwiRFaZdAYgWrSQGcM"),
+            _("grqFWbJtJpBEfbEZavSt"),
+            _("gVqyFBNMFrxJVYKhrcoa"),
+            _("SMQusibGODXYTteMkxPF"),
+            _("zlIMmIhIDmOmyDqrJwYs"),
+            _("vZqhviNbCEuzJEtswvqV"),
+            _("LDTnPNuaVdnSyrMpllIe"),
+            _("rhvNDnUIKHbfpUFntAtX"),
+            _("jmmqRZgmfcszPtXxusSG")]
         
         import selection
         import secret
@@ -30,7 +40,10 @@ class SelectionTest(unittest.TestCase):
         
 @ddt
 class CroisementTest(unittest.TestCase):
-    @data((_("abcd"), _("efgh")),(_("abcde"), _("fghij")))
+    @data(
+        (_("AAAAAAAA"), _("BBBBBBBB")),
+        (_("VHFyYNasyaBVeFEdFPWy"), _("zNxISamKololUBZkMdBz")),
+        (_("xadgHOQkUvnYnBoJMNQgFieoTxpttzOVEFSaNpGx"), _("cmZpPCJSifHsQzJDSYYJzXaZFrRzZxlxmmyxWgvr")))
     @unpack
     def test_croisement(self, chrom1, chrom2):
         import croisement
@@ -52,7 +65,7 @@ class CroisementTest(unittest.TestCase):
         
 @ddt
 class MutationTest(unittest.TestCase):
-    @data(_("jkdjsfo"), _("jinailnfoe"))
+    @data(_("VfsyfRNouNpNcXKDmuAF"), _("VGZuMPHnadKPtdVNeBUz"))
     def test_mutation(self, chrom2):
     
         import copy
