@@ -19,4 +19,4 @@ Le matériel génétique de l'enfant est une combinaison du matériel génétiqu
 Probabilité : de 0.1% à 1%
 Pour chaque enfant, un gène est modifié au hasard.
 
-@[Croisement des chromosomes]({"stubs":["algorithme.py"], "command":"project_test.test_algorithme", "project":"projet", "layout": "aside"})
+@[Croisement des chromosomes]({"stubs":["algorithme.py"], "command":"project_test.ProjectTest", "project":"projet", "layout": "aside"})
