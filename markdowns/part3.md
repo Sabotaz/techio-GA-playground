@@ -22,6 +22,7 @@ Lors d'un croisement, les deux parents vont échanger leur matériel génétique
 Une solution est de prendre 50% du matériel génétique de chaque parent, en croisant à la moitié du chromosome.
 Par exemple, si les parents sont `ABCDEFGH` et `12345678`, l'enfant sera `ABCD5678`.
 Les gènes ne changent pas de place.
+
 D'autres types de croisements existent, par exemple prendre 70% du matériel d'un parent et 30% de l'autre, ou de croiser en plusieurs points.
 
 ![Croisement en deux points](/img/Computational.science.Genetic.algorithm.Crossover.Two.Point.svg "Croisement en deux points")
@@ -31,5 +32,7 @@ D'autres types de croisements existent, par exemple prendre 70% du matériel d'u
 ### Mutation
 Afin de créer du nouveau matériel génétique, certains individus vont subir des mutations.
 Pour cela, un gène va être modifié aléatoirement.
+
+![Mutation d'un gène](/img/mutation.png "Mutation d'un gène")
 
 @[Mutation des chromosomes]({"stubs":["mutation.py"], "command":"tools_tests.MutationTest", "project":"exercice2"})
