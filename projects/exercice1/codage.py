@@ -4,8 +4,6 @@ from secret import alphabet
 def get_letter():
     return ord(random.choice(alphabet))
 
-size = int(input())
-
-def creer_chromosome():
+def creer_chromosome(size):
     return bytearray()
     
