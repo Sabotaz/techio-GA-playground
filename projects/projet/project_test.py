@@ -29,7 +29,7 @@ class ProjectTest(unittest.TestCase):
         except KeyError:
             pass
     
-    @data("Aidhf", "INnhGNIUnkhkHKIhillbKYUGNkHBK")
+    @data("Bravo !", "Cette phrase est plus difficile.", "Tu es VRAIMENT a l'aise avec les ALGORITHMES GENETIQUES !! Felicitations !")
     def test_algorithme(self, solution):
         os.environ["SECRET_KEY"] = solution
         with patch('builtins.input', lambda: str(len(solution))):
