@@ -6,7 +6,7 @@ from codage import creer_chromosome
 from tools import selection, croisement, mutation
 
 def creer_population(pop_size, chrom_size):
-    chrom = creer_chromosome(size)
+    chrom = creer_chromosome(chrom_size)
     return []
     
 def generation(population):
