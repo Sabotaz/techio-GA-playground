@@ -19,7 +19,10 @@ Lors d'un croisement, les deux parents vont échanger leur matériel génétique
 
 ![Croisement entre deux chromosomes](/img/OnePointCrossover.svg "Croisement entre deux chromosomes")
 
-Une solution est de prendre 50% du matériel génétique de chaque parent.
+Une solution est de prendre 50% du matériel génétique de chaque parent, en croisant à la moitié du chromosome.
+Par exemple, si les parents sont `ABCDEFGH` et `12345678`, l'enfant sera `ABCD5678`.
+Les gènes ne changent pas de place.
+D'autres types de croisements existent, par exemple prendre 70% du matériel d'un parent et 30% de l'autre, ou de croiser en plusieurs points.
 
 ![Croisement en deux points](/img/Computational.science.Genetic.algorithm.Crossover.Two.Point.svg "Croisement en deux points")
 
