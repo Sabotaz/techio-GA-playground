@@ -74,7 +74,7 @@ class MutationTest(unittest.TestCase):
         chrom1 = copy.copy(chrom2)
         mutation.mutation(chrom2)
         
-        test_is_chromosome(self, chrom2, len(chrom1)):
+        test_is_chromosome(self, chrom2, len(chrom1))
         
         score = 0
         for a, b in zip(chrom1, chrom2):
