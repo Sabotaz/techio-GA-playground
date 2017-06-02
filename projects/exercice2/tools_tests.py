@@ -50,7 +50,7 @@ class SelectionTest(unittest.TestCase):
         
         self.assertTrue(len(select) >= 2, "pas assez de chromosomes selectionnés")
         self.assertTrue(len(select) < len(blob), "trop de chromosomes selectionnés")
-        self.assertTrue(solution.get_mean_rang(select) >= solution.get_mean_rang(blob), "la selection n'est pas assez bonne")
+        self.assertTrue(solution.get_mean_score(select) >= solution.get_mean_score(blob), "la selection n'est pas assez bonne")
         
 @ddt
 class CroisementTest(unittest.TestCase):
