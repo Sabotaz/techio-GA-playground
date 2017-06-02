@@ -29,3 +29,7 @@ Si il n'y a pas de solution, on passe à la génération suivante (phase 2).
 Le but de l'exercice est de trouver la phrase secrète grâce à un algorithme génétique, en utilisant les outils codées précédemment.
 
 @[Algorithme génétique]({"stubs":["algorithme.py"], "command":"project_test.ProjectTest", "project":"projet", "layout": "aside"})
+
+Vous pouvez voir .
+
+@[Mars Lander]({"stubs": [], "command": "python visualisation", "project":"viewer-mars-lander"})

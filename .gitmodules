@@ -1,0 +1,3 @@
+[submodule "projects/viewer-mars-lander/genetic-lander"]
+	path = projects/viewer-mars-lander/genetic-lander
+	url = git@github.com:Sabotaz/genetic-lander.git

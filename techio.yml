@@ -25,3 +25,8 @@ projects:
     runner:
       name: techio/python3-unittest-runner
       version: 1.1.0-python-3.6
+  viewer-mars-lander:
+    root: /projects/viewer-mars-lander
+    runner:
+      name: techio/python3-unittest-runner
+      version: 1.1.0-python-3.6
