@@ -30,6 +30,7 @@ Le but de l'exercice est de trouver la phrase secrète grâce à un algorithme g
 
 @[Algorithme génétique]({"stubs":["algorithme.py"], "command":"project_test.ProjectTest", "project":"projet", "layout": "aside"})
 
-Vous pouvez voir .
+Voici autre exemple d'algorithme génétique : le lander doit trouver son chemin jusqu'à la plateforme d'atterissage.
+Son adaptation est calculée par sa distance finale à la plateforme d'atterissage.
 
-@[Mars Lander]({"stubs": ["genetic-lander/main.js"], "command": "visualisation.VisualisationTest", "project":"viewer-mars-lander"})
+@[Mars Lander]({"stubs": ["genetic-lander-no-submodule/README.md"], "command": "visualisation.VisualisationTest", "project":"viewer-mars-lander"})
