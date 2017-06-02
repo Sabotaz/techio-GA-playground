@@ -14,10 +14,10 @@ _ = lambda x: bytearray(x,"ascii")
 class FittingTest(unittest.TestCase):
 
     @patch('solution.get_solution')
-    def test_fitting(self, mock_solution):
+    def test_fitting(self, mock_function):
         import fitting
         key = "QweJWLgWLIhdvkwyHouO"
-        mock_some_fn.return_value = key
+        mock_function.return_value = key
         self.assertTrue(0 <= fitting.get_score(_("wedfyIXpkKdZJoGYKYaF")) <= 1, "Le score doit être compris entre 0 et 1")
         self.assertTrue(fitting.get_score(_("QweJWLgWLIhdvkwyHouO")) == 1, "Le score d'une solution doit être de 1")
         self.assertTrue(fitting.get_score(_("aaaaaaaaaaaaaaaaaaaa")) < 0.05, "Le score d'un chromosome totalement différent doit être proche de 0")
