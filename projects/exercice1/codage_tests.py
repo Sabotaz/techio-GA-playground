@@ -3,7 +3,7 @@ import unittest
 from ddt import ddt, data, unpack
 
 def test_is_chromosome(cls, chrom, size):
-    cls.assertIsInstance(chrom, bytearray, "le chromosome n'a pas le bon type")
+    cls.assertIsInstance(chrom, str, "le chromosome n'a pas le bon type")
     cls.assertEqual(len(chrom), size, "le chromosome n'a pas la bonne taille")
     
 @ddt

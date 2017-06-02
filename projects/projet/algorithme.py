@@ -16,12 +16,12 @@ def generation(population):
     
     # reproduction
     ## croisement
-    parent1 = bytearray()
-    parent2 = bytearray()
+    parent1 = ""
+    parent2 = ""
     enfant = croisement(parent1, parent2)
     
     ## mutation
-    mutation(bytearray())
+    mutation("")
     
     # retourner la nouvelle génération
     return []
@@ -41,8 +41,8 @@ def algorithme():
         generation([])
     
     ## vérifier si une solution est trouvée
-        if est_solution(bytearray()):
-            solutions.append(bytearray())
+        if est_solution(""):
+            solutions.append("")
     
     # afficher la solution
     print("SOLUTION")

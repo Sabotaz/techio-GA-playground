@@ -1,4 +1,3 @@
-import os
 
 from string import ascii_letters
 

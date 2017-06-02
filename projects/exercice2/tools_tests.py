@@ -6,10 +6,8 @@ import os
 
         
 def test_is_chromosome(cls, chrom, size):
-    cls.assertIsInstance(chrom, bytearray, "le chromosome n'a pas le bon type")
+    cls.assertIsInstance(chrom, str, "le chromosome n'a pas le bon type")
     cls.assertEqual(len(chrom), size, "le chromosome n'a pas la bonne taille")
-            
-_ = lambda x: bytearray(x,"ascii")
 
 class FittingTest(unittest.TestCase):
 
@@ -18,10 +16,10 @@ class FittingTest(unittest.TestCase):
         import fitting
         key = "QweJWLgWLIhdvkwyHouO"
         mock_function.return_value = key
-        self.assertTrue(0 <= fitting.get_score(_("wedfyIXpkKdZJoGYKYaF")) <= 1, "Le score doit être compris entre 0 et 1")
-        self.assertTrue(fitting.get_score(_("QweJWLgWLIhdvkwyHouO")) == 1, "Le score d'une solution doit être de 1")
-        self.assertTrue(fitting.get_score(_("aaaaaaaaaaaaaaaaaaaa")) < 0.05, "Le score d'un chromosome totalement différent doit être proche de 0")
-        self.assertTrue(fitting.get_score(_("QweaaaaaaaaaaaaaaouO")) < fitting.get_score(_("aaeJWLgWLIhdvkwyaaaa")), "Plus un chromosome ressemble à la solution, plus son score doit être élevé")
+        self.assertTrue(0 <= fitting.get_score("wedfyIXpkKdZJoGYKYaF") <= 1, "Le score doit être compris entre 0 et 1")
+        self.assertTrue(fitting.get_score("QweJWLgWLIhdvkwyHouO") == 1, "Le score d'une solution doit être de 1")
+        self.assertTrue(fitting.get_score("aaaaaaaaaaaaaaaaaaaa") < 0.05, "Le score d'un chromosome totalement différent doit être proche de 0")
+        self.assertTrue(fitting.get_score("QweaaaaaaaaaaaaaaouO") < fitting.get_score("aaeJWLgWLIhdvkwyaaaa"), "Plus un chromosome ressemble à la solution, plus son score doit être élevé")
 
 @ddt
 class SelectionTest(unittest.TestCase):
@@ -30,16 +28,16 @@ class SelectionTest(unittest.TestCase):
         os.environ["SECRET_KEY"] = "grqFWIhIDmOmyDsPkbBY"
         
         blob = [
-            _("nRLTPNabIglNSDsPkbBY"),
-            _("KVlwiRFaZdAYgWrSQGcM"),
-            _("grqFWbJtJpBEfbEZavSt"),
-            _("gVqyFBNMFrxJVYKhrcoa"),
-            _("SMQusibGODXYTteMkxPF"),
-            _("zlIMmIhIDmOmyDqrJwYs"),
-            _("vZqhviNbCEuzJEtswvqV"),
-            _("LDTnPNuaVdnSyrMpllIe"),
-            _("rhvNDnUIKHbfpUFntAtX"),
-            _("jmmqRZgmfcszPtXxusSG")]
+            "nRLTPNabIglNSDsPkbBY",
+            "KVlwiRFaZdAYgWrSQGcM",
+            "grqFWbJtJpBEfbEZavSt",
+            "gVqyFBNMFrxJVYKhrcoa",
+            "SMQusibGODXYTteMkxPF",
+            "zlIMmIhIDmOmyDqrJwYs",
+            "vZqhviNbCEuzJEtswvqV",
+            "LDTnPNuaVdnSyrMpllIe",
+            "rhvNDnUIKHbfpUFntAtX",
+            "jmmqRZgmfcszPtXxusSG"]
         
         import selection
         import solution
@@ -55,9 +53,9 @@ class SelectionTest(unittest.TestCase):
 @ddt
 class CroisementTest(unittest.TestCase):
     @data(
-        (_("AAAAAAAA"), _("BBBBBBBB")),
-        (_("VHFyYNasyaBVeFEdFPWy"), _("zNxISamKololUBZkMdBz")),
-        (_("xadgHOQkUvnYnBoJMNQgFieoTxpttzOVEFSaNpGx"), _("cmZpPCJSifHsQzJDSYYJzXaZFrRzZxlxmmyxWgvr")))
+        ("AAAAAAAA", "BBBBBBBB"),
+        ("VHFyYNasyaBVeFEdFPWy", "zNxISamKololUBZkMdBz"),
+        ("xadgHOQkUvnYnBoJMNQgFieoTxpttzOVEFSaNpGx", "cmZpPCJSifHsQzJDSYYJzXaZFrRzZxlxmmyxWgvr"))
     @unpack
     def test_croisement(self, chrom1, chrom2):
         import croisement
@@ -79,14 +77,12 @@ class CroisementTest(unittest.TestCase):
         
 @ddt
 class MutationTest(unittest.TestCase):
-    @data(_("VfsyfRNouNpNcXKDmuAF"), _("VGZuMPHnadKPtdVNeBUz"))
-    def test_mutation(self, chrom2):
+    @data("VfsyfRNouNpNcXKDmuAF", "VGZuMPHnadKPtdVNeBUz")
+    def test_mutation(self, chrom1):
     
-        import copy
         import mutation
         
-        chrom1 = copy.copy(chrom2)
-        mutation.mutation(chrom2)
+        chom2 = mutation.mutation(chrom1)
         
         test_is_chromosome(self, chrom2, len(chrom1))
         

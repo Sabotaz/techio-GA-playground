@@ -12,7 +12,7 @@ def get_score(chrom):
     
     score = 0
     for a, b in zip(chrom, key):
-        if a == ord(b):
+        if a == b:
             score += 1
     return score / len(key)
     
