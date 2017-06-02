@@ -16,7 +16,7 @@ class FittingTest(unittest.TestCase):
     def test_fitting(self):
         key = "QweJWLgWLIhdvkwyHouO"
         import fitting
-        with patch('solution.get_solution', lambda: key):
+        with patch('fitting.solution.get_solution', lambda: key):
             self.assertTrue(0 <= fitting.get_score(_("wedfyIXpkKdZJoGYKYaF")) <= 1, "Le score doit être compris entre 0 et 1")
             self.assertTrue(fitting.get_score(_("QweJWLgWLIhdvkwyHouO")) == 1, "Le score d'une solution doit être de 1")
             self.assertTrue(fitting.get_score(_("aaaaaaaaaaaaaaaaaaaa")) < 0.05, "Le score d'un chromosome totalement différent doit être proche de 0")
