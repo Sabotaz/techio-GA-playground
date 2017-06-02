@@ -32,4 +32,4 @@ Le but de l'exercice est de trouver la phrase secrète grâce à un algorithme g
 
 Vous pouvez voir .
 
-@[Mars Lander]({"stubs": ["main.js"], "command": "visualisation.VisualisationTest", "project":"viewer-mars-lander"})
+@[Mars Lander]({"stubs": ["genetic-lander/main.js"], "command": "visualisation.VisualisationTest", "project":"viewer-mars-lander"})
