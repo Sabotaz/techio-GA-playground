@@ -10,6 +10,18 @@ def test_is_chromosome(cls, chrom, size):
             
 _ = lambda x: bytearray(x,"ascii")
 
+class FittingTest(unittest.TestCase):
+
+    def test_fitting(self):
+        key = "QweJWLgWLIhdvkwyHouO"
+        import solution
+        import fitting
+        with patch('solution.get_solution', lambda: key):
+            self.assertTrue(0 <= fitting.getScore(_("wedfyIXpkKdZJoGYKYaF")) <= 1, "Le score doit être compris entre 0 et 1")
+            self.assertTrue(fitting.getScore(_("QweJWLgWLIhdvkwyHouO")) == 1, "Le score d'une solution doit être de 1")
+            self.assertTrue(fitting.getScore(_("aaaaaaaaaaaaaaaaaaaa")) < 0.05, "Le score d'un chromosome totalement différent doit être proche de 0")
+            self.assertTrue(fitting.getScore(_("QweaaaaaaaaaaaaaaouO")) < fitting.getScore(_("aaeJWLgWLIhdvkwyaaaa")), "Plus un chromosome ressemble à la solution, plus son score doit être élevé")
+
 @ddt
 class SelectionTest(unittest.TestCase):
     

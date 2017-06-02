@@ -4,6 +4,9 @@ from string import ascii_letters
 
 alphabet = ascii_letters + " !'."
 
+def get_solution():
+    pass
+
 def get_score(chrom):
     key = os.environ['SECRET_KEY']
     
@@ -16,3 +19,4 @@ def get_score(chrom):
 def get_mean_score(population):
     mean = sum(get_score(chrom) for chrom in population)/len(population)
     return mean
+    

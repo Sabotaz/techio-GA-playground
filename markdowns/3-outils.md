@@ -12,6 +12,17 @@ Dans cette étape, nous allons sélectionner les individus qui permettront de cr
 Cette sélection peut être effecuée de la façon suivante :
  * Un individu avec un bon rang (bon fitting) a beaucoup de chance d'être retenu
  * Un individu avec un mauvais rang (donc moins adapté) a moins de chance d'être retenu
+ 
+La première étape est de créer une fonction de fitting. C'est elle qui va noter chaque individu. Elle renvoie généralement un nombre flottant compris entre 0 (mauvais score) et 1 (bon score).
+
+@[Fonction de fitting]({"stubs":["fitting.py"], "command":"tools_tests.FittingTest", "project":"exercice2"})
+
+Une fois la fonction de fitting définie, nous pouvons effectuer une sélection sur notre population.
+Un des moyens possible est le suivant :
+ * Sélectionner les 30% les meilleurs
+ * Sélectionner aléatoirement 20% des individus restants
+
+Si seulement les meilleurs sont sélectionnés (on appelle ça élitisme), le danger est de converger plus facilement vers un minimum local, sans laisser la possibilité d'explorer d'autres pistes qui pourraient s'avérer fructueuses par la suite.
 
 @[Sélection des chromosomes]({"stubs":["selection.py"], "command":"tools_tests.SelectionTest", "project":"exercice2"})
 
