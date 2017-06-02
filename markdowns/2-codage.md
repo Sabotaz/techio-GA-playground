@@ -45,6 +45,6 @@ Dans la pratique, on utilisera un codage différent suivant le type de problème
 
 `"Aoljfon oaeznFjlf"`, chaque caractère indique un caractère de la chaîne à trouver.
 
-Pour l'exercice suivant, le chromosome sera stoqué sous la forme d'une `bytearray`.
+Pour l'exercice suivant, le chromosome sera stoqué sous la forme d'une chaine de caractères.
 
 @[Codage d'un chromosome]({"stubs":["codage.py"], "command":"codage_tests.ChromosomeTest", "project":"exercice1"})
