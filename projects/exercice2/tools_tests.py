@@ -82,7 +82,7 @@ class MutationTest(unittest.TestCase):
     
         import mutation
         
-        chom2 = mutation.mutation(chrom1)
+        chrom2 = mutation.mutation(chrom1)
         
         test_is_chromosome(self, chrom2, len(chrom1))
         
