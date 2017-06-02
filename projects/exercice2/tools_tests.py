@@ -15,7 +15,6 @@ class FittingTest(unittest.TestCase):
 
     def test_fitting(self):
         key = "QweJWLgWLIhdvkwyHouO"
-        import solution
         import fitting
         with patch('solution.get_solution', lambda: key):
             self.assertTrue(0 <= fitting.get_score(_("wedfyIXpkKdZJoGYKYaF")) <= 1, "Le score doit être compris entre 0 et 1")
