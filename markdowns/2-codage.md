@@ -51,7 +51,9 @@ Dans la pratique, on utilisera un codage différent suivant le type de problème
 
  * Diriger un robot [(mars lander)](https://www.codingame.com/training/easy/mars-lander-episode-1):
  
-![Mars Lander : simulateur](/img/marslander.png "Mars Lander : simulateur" 400x260) 
+![Mars Lander : simulateur](/img/marslander.png "blah" 400x260)
+
+test
 
 > 
 > ![Mars Lander : console](/img/ControlPanel.png "Mars Lander : console")
