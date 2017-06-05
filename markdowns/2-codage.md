@@ -50,11 +50,8 @@ Dans la pratique, on utilisera un codage différent suivant le type de problème
 `0110001`, chaque bit correspond à un objet et indique si oui ou non celui-ci a été placé dans le sac.
 
  * Diriger un robot [(mars lander)](https://www.codingame.com/training/easy/mars-lander-episode-1):
-
-![Mars Lander : console](/img/ControlPanel.png "Mars Lander : console")
-![Mars Lander : console](/img/ControlPanel.png "Mars Lander : console")
-
-> <img src="/img/marslander.png" alt="Mars Lander : simulateur">
+ 
+> ![Mars Lander : simulateur](/img/marslander.png "Mars Lander : simulateur")
 > ![Mars Lander : console](/img/ControlPanel.png "Mars Lander : console")
 > L'objectif est de faire atterrir, sans crash, la capsule "Mars Lander" qui contient le rover Opportunity.
  
