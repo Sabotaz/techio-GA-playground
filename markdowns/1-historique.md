@@ -16,6 +16,6 @@ Les algorithmes génétiques font partie de la catégorie des algorithmes évolu
 
 Ces algorithmes sont dit "bioinspirés" car ils se basent sur l'évolution des êtres vivants qui s'adaptent de mieux en mieux à leur environnement.
 
-En particulier, les algorithmes génétiques se concentrent sur l'évolution du matériel génétique de chaque individu au sein d'un groupe d'individus : le brassage génétique.
-
+En particulier, les algorithmes génétiques se concentrent sur l'évolution du matériel génétique de chaque individu au sein d'un groupe d'individus.
+À chaque génération, les individus vont se reproduire et échanger leur matériel génétique. Ces recombinaisons génétiques sur la population entière et sur plusieurs génération est appelé le brassage génétique.
 
