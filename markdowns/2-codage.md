@@ -44,7 +44,7 @@ Dans la pratique, on utilisera un codage différent suivant le type de problème
 
  * Problème du sac à dos :
  
-> ![Problème du sac à dos](/img/Knapsack.svg "Problème du sac à dos")
+> ![Problème du sac à dos](/img/Knapsack.png "Problème du sac à dos")
 > Le problème du sac à dos : quelles boîtes choisir afin de maximiser la somme emportée tout en ne dépassant pas les 15 kg autorisés ?
  
 `0110001`, chaque bit correspond à un objet et indique si oui ou non celui-ci a été placé dans le sac.
