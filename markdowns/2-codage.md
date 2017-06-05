@@ -47,12 +47,13 @@ Dans la pratique, on utilisera un codage différent suivant le type de problème
 > ![Problème du sac à dos](/img/Knapsack.svg "Problème du sac à dos")
 > Le problème du sac à dos : quelles boîtes choisir afin de maximiser la somme emportée tout en ne dépassant pas les 15 kg autorisés ?
  
-`0110001`, chaque bit indique si oui ou non l'objet a été placé dans le sac.
+`0110001`, chaque bit correspond à un objet et indique si oui ou non celui-ci a été placé dans le sac.
 
  * Diriger un robot [(mars lander)](https://www.codingame.com/training/easy/mars-lander-episode-1):
  
- ![Mars Lander : simulateur](/img/marslander.png "Mars Lander : simulateur")
- ![Mars Lander : console](/img/ControlPanel.png "Mars Lander : console")
+> ![Mars Lander : simulateur](/img/marslander.png "Mars Lander : simulateur")
+> ![Mars Lander : console](/img/ControlPanel.png "Mars Lander : console")
+> L'objectif est de faire atterrir, sans crash, la capsule "Mars Lander" qui contient le rover Opportunity.
  
 `[float, int, float, int, float, int...]` l'angle (-90° à 90°) et la puissance des fusées (0 à 4) à chaque tour.
 
@@ -60,6 +61,6 @@ Dans la pratique, on utilisera un codage différent suivant le type de problème
 
 `"Aoljfon oaeznFjlf"`, chaque caractère indique un caractère de la chaîne à trouver.
 
-Pour l'exercice suivant, le chromosome sera stoqué sous la forme d'une chaine de caractères.
+Dans l'exercice suivant, vous devez coder la fonction permettant de créer un nouvel individu. le chromosome sera stoqué sous la forme d'une chaine de caractères.
 
 @[Codage d'un chromosome]({"stubs":["codage.py"], "command":"codage_tests.ChromosomeTest", "project":"exercice1"})

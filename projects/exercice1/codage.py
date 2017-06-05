@@ -5,6 +5,6 @@ def get_letter():
     return random.choice(alphabet)
 
 def creer_chromosome(size):
-    # on crée un nouveau chromosome de la bonne taille sous forme d'une chaine de caractère
+    # TODO: créer un nouveau chromosome de la bonne taille sous forme d'une chaine de caractère
     return ""
     
