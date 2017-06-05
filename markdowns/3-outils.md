@@ -5,7 +5,7 @@ Ils s'appuient sur plusieurs outils inspirés de la biologie qui permettent à l
 ## Sélection
 Cet outil est inspiré de la [sélection naturelle](https://fr.wikipedia.org/wiki/Sélection_naturelle).
 
-![Les girafes qui peuvent manger des feuilles plus hautes survivent mieux](/img/Selection.svg "Les girafes qui peuvent manger des feuilles plus hautes survivent mieux")
+![Les girafes qui peuvent manger des feuilles plus hautes survivent mieux](/img/Selection.png "Les girafes qui peuvent manger des feuilles plus hautes survivent mieux")
 
 Chaque individu a un score d'adaptation plus ou moins bon pour le problème donné.
 Dans cette étape, nous allons sélectionner les individus qui permettront de créer la génération suivante.
