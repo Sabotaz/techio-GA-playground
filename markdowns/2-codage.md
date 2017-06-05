@@ -51,7 +51,7 @@ Dans la pratique, on utilisera un codage différent suivant le type de problème
 
  * Diriger un robot [(mars lander)](https://www.codingame.com/training/easy/mars-lander-episode-1):
  
-> ![Mars Lander : simulateur](/img/marslander.png "Mars Lander : simulateur")
+> ![Mars Lander : simulateur](/img/marslander.png "Mars Lander : simulateur" 46x26)
 > ![Mars Lander : console](/img/ControlPanel.png "Mars Lander : console")
 > L'objectif est de faire atterrir, sans crash, la capsule "Mars Lander" qui contient le rover Opportunity.
  
