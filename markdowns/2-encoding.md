@@ -1,9 +1,9 @@
 # Individuals, chromosoms and genes
 
-![Human chromosom 16 genes](/img/Human_chromosome_16_with_ASD_genes_from_IJMS-16-06464.png "Human chromosom 16 genes")
+![Human chromosome 16 genes](/img/Human_chromosome_16_with_ASD_genes_from_IJMS-16-06464.png "Human chromosome 16 genes")
 
 A human has several chromosoms, each carrying thousands of genes. Likewise, in our model, each individual is to be represented by its genes, organised in chromosomes. For the sake of readability,
-we will use either "chromosom" or "individual" to refer to the genetic material of an individual.
+we will use either "chromosome" or "individual" to refer to the genetic material of an individual.
 
 In analogy with the evolution theory, these algorithms are based on the evolution of a population over time.
 
@@ -33,7 +33,7 @@ Bruteforcing it would be inefficient. Instead, we will try to guess the solution
  
 The first step is to create individuals for our base population.
 
-A chromosom is a set of genes. We could encode it in different ways :
+A chromosome is a set of genes. We could encode it in different ways :
  * A binary encoding : a binary string (set of 0s or 1s)
  * multiple characters encoding : a string of characters
 
@@ -60,6 +60,6 @@ In practice, we will use a different encoding regarding the problem to solve.
 
 `"Aoljfon oaeznFjlf"`, each character in the string is to be found.
 
-In the following exercise, you will code the function creating a new individual. The chromosom will be stored as a string.
+In the following exercise, you will code the function creating a new individual. The chromosome will be stored as a string.
 
-@[Chromosom encoding]({"stubs":["codage.py"], "command":"codage_tests.ChromosomeTest", "project":"exercice1"})
+@[chromosome encoding]({"stubs":["codage.py"], "command":"codage_tests.ChromosomeTest", "project":"exercice1"})

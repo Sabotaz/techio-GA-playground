@@ -18,7 +18,7 @@ This selection can be done that way :
 The first thing to do is to create a fitting function. It will score each individual.
 The function generally returns a floating number between 0 (bad score) and 1 (good score).
 
-In this exercise, you will implement the fitting function. We will simply compare the chromosom with the solution.
+In this exercise, you will implement the fitting function. We will simply compare the chromosome with the solution.
 
 @[Fitting function]({"stubs":["fitting.py"], "command":"tools_tests.FittingTest", "project":"exercice2"})
 
@@ -45,7 +45,7 @@ During this step, the parents will be exchanging their genetic material to produ
 
 ![Crossover of two chromosoms](/img/OnePointCrossover.scg "Crossover of two chromosoms")
 
-A solution is to take each parent 50% of their genetic material, making the crossover in the middle of the chromosom.
+A solution is to take each parent 50% of their genetic material, making the crossover in the middle of the chromosome.
 For instance if the parents are `ABCDEFGH` and `1345678`, the child will be `ABCD5678`.
 There is no change in the genes' places.
 
@@ -55,7 +55,7 @@ Or we could do the crossover on multiple locations.
 
 ![Two-points crossover](/img/Computational.science.Genetic.algorithm.Crossover.Two.Point.svg "Two-points crossover")
 
-@[Chromosom crossover]({"stubs":["croisement.py"], "command":"tools_tests.CroisementTest", "project":"exercice2"})
+@[Chromosome crossover]({"stubs":["croisement.py"], "command":"tools_tests.CroisementTest", "project":"exercice2"})
 
 ### Mutation
 In order to create new genetic material, some individuals will [mutate](https://en.wikipedia.org/wiki/Mutation).
