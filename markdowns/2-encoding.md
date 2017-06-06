@@ -13,7 +13,7 @@ A genetic algorithm consist in the following steps :
  * Creation of the base population
  * Individual evalution (is the individual fit to solve the problem ?)
  * Individuals seletion (the more fitting an individual, the more survival chances)
- * Crossing / reproduction (Crossing two individuals creates a new individual whose genes comes from both parents)
+ * Crossover / reproduction (Crossover of two individuals creates a new individual whose genes comes from both parents)
  * Mutation (Some of the children's genes can mutate to create new genes)
 
 ## The problem
@@ -37,7 +37,7 @@ A chromosom is a set of genes. We could encode it in different ways :
  * A binary encoding : a binary string (set of 0s or 1s)
  * multiple characters encoding : a string of characters
 
-On the crossing step, we seek to have a wide genetic recombination. The binary encoding has a finer granularity for the creossing location but is not really natural and not fit for real data (for instance, modifying a certain bit in a floating number can result in invalid values).
+On the crossover step, we seek to have a wide genetic recombination. The binary encoding has a finer granularity for the creossing location but is not really natural and not fit for real data (for instance, modifying a certain bit in a floating number can result in invalid values).
 
 In practice, we will use a different encoding regarding the problem to solve.
 
