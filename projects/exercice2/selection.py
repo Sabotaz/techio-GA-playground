@@ -3,14 +3,15 @@ from solution import get_score
     
 def score(chrom):
     # nombre flottant compris entre 0 et 1 suivant si le chromosome est mauvais ou bon
-    # c'est la fonction qui a été codée à l'exercice précédent
+    # floating number between 0 and 1. The better the chromosome, the closer to 1
+    # We coded the get_score(chrom) in the previous exercise
     return get_score(chrom)
     
 def selection(chromosomes_list):
-    GRADED_RETAIN_PERCENT = 0.3     # pourcentage des meilleurs individus retenus
-    NONGRADED_RETAIN_PERCENT = 0.2  # pourcentage d'individus retenus aléatoirement parmis les individus restants
-    # TODO: implémenter la fonction de sélection
-    #  * trier les individus selon leur adaptation
-    #  * sélectionner les meilleurs individus
-    #  * sélectionner aléatoirement d'autres individus
+    GRADED_RETAIN_PERCENT = 0.3     # percentage of retained best fitting individuals
+    NONGRADED_RETAIN_PERCENT = 0.2  # percentage of retained remaining individuals (randomly selected)
+    # TODO: implement the selection function
+    #  * Sort individuals by their fitting score
+    #  * Select the best individuals
+    #  * Randomly select other individuals
     return []
