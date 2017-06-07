@@ -24,8 +24,8 @@ def generation(population):
     # TODO: implement the reproduction
     while len(children) < ???:
         ## crossover
-        parent2 = ??? # randomly selected
         parent1 = ??? # randomly selected
+        parent2 = ??? # randomly selected
         # use the crossover(parent1, parent2) function created on exercise 2
         child = crossover(parent1, parent2)
         
@@ -53,7 +53,7 @@ def algorithm():
         population = ???
         
         ## display the average score of the population (watch it improve)
-        print(get_mean_score(population), file=sys.stderr)
+        # print(get_mean_score(population), file=sys.stderr)
     
         ## check if a solution has been found
         for chrom in population:
