@@ -3,7 +3,7 @@ from solution import get_solution
 
 def get_score(chrom):
     key = get_solution()
-    # TODO: implémenter la fonction de score
-    #  * comparer le chromosome avec la solution en comptant le nombre de caracactères à la bonne place
+    # TODO: implement the scoring function
+    #  * compare the chromosome with the solution (how many character are in the correct position?)
     return 0
     

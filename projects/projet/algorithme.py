@@ -3,63 +3,63 @@ import sys
 from solution import est_solution, get_mean_score
 # Vous pouvez redéfinir ces fonctions avec celles que vous avez écrites précédemment.
 # Une implémentation différente est fournie.
-from codage import creer_chromosome
-from tools import selection, croisement, mutation
+from codage import create_chromosome
+from tools import selection, crossover, mutation
 
-def creer_population(pop_size, chrom_size):
-    # on utilise la fonction creer_chromosome(chrom_size) créée précédemment
-    # TODO: créer la population
-    chrom = creer_chromosome(chrom_size)
+def create_population(pop_size, chrom_size):
+    # use the previously defined create_chromosome(size) function
+    # TODO: create the base population
+    chrom = create_chromosome(chrom_size)
     return ???
     
 def generation(population):
     
-    # sélection
-    # on utilise la fonction selection(population) créée précédemment
+    # selection
+    # use the selection(population) function created on exercise 2
     select = selection(population)
     
     # reproduction
-    # tant que notre population n'a pas la bonne taille, on complète notre population par des enfants
+    # As long as we need individuals in the new population, fill it with children
     children = []
-    # TODO: implémenter la reproduction
+    # TODO: implement the reproduction
     while len(children) < ???:
         ## croisement
-        parent1 = ??? # choisi aléatoirement
-        parent2 = ??? # choisi aléatoirement
-        # on utilise la fonction croisement(parent1, parent2) créée précédemment
-        enfant = croisement(parent1, parent2)
+        parent2 = ??? # randomly selected
+        parent1 = ??? # randomly selected
+        # use the crossover(parent1, parent2) function created on exercise 2
+        enfant = crossover(parent1, parent2)
         
         ## mutation
-        # on utilise la fonction mutation(enfant) créée précédemment
+        # use the mutation(enfant) function created on exercise 2
         enfant = mutation(enfant)
         children.append(enfant)
     
-    # retourner la nouvelle génération
+    # return the new generation
     return select + children
 
-def algorithme():
+def algorithm():
     chrom_size = int(input())
     population_size = ???
     
-    # créer la population
-    population = creer_population(population_size, chrom_size)
+    # create the base population
+    population = create_population(population_size, chrom_size)
     
     solutions = []
     
-    # tant qu'une solution n'est pas trouvée:
+    # while a solution has not been found :
     while not solutions:
-        ## créer la generation suivante
-        # TODO: créer la génération suivante à l'aide de la fonction generation(population)
+        ## create the next generation
+        # TODO: create the next generation using the generation(population) function
         population = ???
         
-        ## on affiche le score moyen de notre population (on voit que ça progresse ! )
+        ## display the average score of the population (watch it improve)
         print(get_mean_score(population), file=sys.stderr)
     
-        ## vérifier si une solution est trouvée
+        ## check if a solution has been found
         for chrom in population:
             if est_solution(chrom):
                 solutions.append(chrom)
     
-    # TODO: afficher la solution
+    # TODO: print the solution
     print("SOLUTION")
     

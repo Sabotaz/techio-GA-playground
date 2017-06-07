@@ -1,3 +1,4 @@
-Ce cours présente les algorithmes génétiques, et propose de découvrir facilement les différentes étapes de cet algorithme.
+This course provides an introduction to genetic algorithms and the steps to develop them.
 
-Les outils à mettre en place sont expliqués pas à pas, et leur implémentation en python est guidée.
+The tools used in this kind of algorithm are explained step by step.
+Implementation is done using Python.

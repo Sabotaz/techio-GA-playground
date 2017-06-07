@@ -16,7 +16,7 @@ def selection(chromlist):
     others = random.sample(chromlist[ind:], nb_others)
     return betters + others
     
-def croisement(chrom_1, chrom_2):
+def crossover(chrom_1, chrom_2):
     mid = len(chrom_1) // 2
     return chrom_1[:mid] + chrom_2[mid:]
     

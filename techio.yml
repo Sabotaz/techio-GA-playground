@@ -1,14 +1,14 @@
 title : Algorithmes génétiques
 about: about.md
 plan:
-  - title: Historique
-    statement: markdowns/1-historique.md
-  - title: Codage
-    statement: markdowns/2-codage.md
-  - title: Outils
-    statement: markdowns/3-outils.md
-  - title: Algorithme
-    statement: markdowns/4-algorithme.md
+  - title: History
+    statement: markdowns/1-history.md
+  - title: Encoding
+    statement: markdowns/2-encoding.md
+  - title: Tools
+    statement: markdowns/3-tools.md
+  - title: Algorithm
+    statement: markdowns/4-algorithm.md
 projects:
   exercice1:
     root: /projects/exercice1

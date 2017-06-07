@@ -6,8 +6,8 @@ import os
 
         
 def test_is_chromosome(cls, chrom, size):
-    cls.assertIsInstance(chrom, str, "le chromosome n'a pas le bon type")
-    cls.assertEqual(len(chrom), size, "le chromosome n'a pas la bonne taille")
+    cls.assertIsInstance(chrom, str, "The chromosome's type is incorrect")
+    cls.assertEqual(len(chrom), size, "The chromosome's size is incorrect")
 
 class FittingTest(unittest.TestCase):
 
@@ -16,10 +16,10 @@ class FittingTest(unittest.TestCase):
         import fitting
         key = "QweJWLgWLIhdvkwyHouO"
         mock_function.return_value = key
-        self.assertTrue(0 <= fitting.get_score("wedfyIXpkKdZJoGYKYaF") <= 1, "Le score doit être compris entre 0 et 1")
-        self.assertTrue(fitting.get_score("QweJWLgWLIhdvkwyHouO") == 1, "Le score d'une solution doit être de 1")
-        self.assertTrue(fitting.get_score("aaaaaaaaaaaaaaaaaaaa") < 0.05, "Le score d'un chromosome totalement différent doit être proche de 0")
-        self.assertTrue(fitting.get_score("QweaaaaaaaaaaaaaaouO") < fitting.get_score("aaeJWLgWLIhdvkwyaaaa"), "Plus un chromosome ressemble à la solution, plus son score doit être élevé")
+        self.assertTrue(0 <= fitting.get_score("wedfyIXpkKdZJoGYKYaF") <= 1, "The score must fit between 0 and 1")
+        self.assertTrue(fitting.get_score("QweJWLgWLIhdvkwyHouO") == 1, "A solution to the problem should have a score of 1")
+        self.assertTrue(fitting.get_score("aaaaaaaaaaaaaaaaaaaa") < 0.05, "A chromosome really different from the solution should have a near 0 score")
+        self.assertTrue(fitting.get_score("QweaaaaaaaaaaaaaaouO") < fitting.get_score("aaeJWLgWLIhdvkwyaaaa"), "The more a chromosome fits the solution, the higher its score")
 
 @ddt
 class SelectionTest(unittest.TestCase):
@@ -44,11 +44,11 @@ class SelectionTest(unittest.TestCase):
         
         select = selection.selection(blob)
         for x in select:
-            self.assertIn(x, blob, "création de nouveaux chromosomes interdite")
+            self.assertIn(x, blob, "Creation of new chromosoms is forbidden")
         
-        self.assertTrue(len(select) >= 2, "pas assez de chromosomes selectionnés")
-        self.assertTrue(len(select) < len(blob), "trop de chromosomes selectionnés")
-        self.assertTrue(solution.get_mean_score(select) >= solution.get_mean_score(blob), "la selection n'est pas assez bonne")
+        self.assertTrue(len(select) >= 2, "Not enough selected chromosoms")
+        self.assertTrue(len(select) < len(blob), "Too many selected chromosoms")
+        self.assertTrue(solution.get_mean_score(select) >= solution.get_mean_score(blob), "The selection is not good enough")
         
 @ddt
 class CroisementTest(unittest.TestCase):
@@ -59,21 +59,21 @@ class CroisementTest(unittest.TestCase):
     @unpack
     def test_croisement(self, chrom1, chrom2):
         import croisement
-        chrom3 = croisement.croisement(chrom1, chrom2)
+        chrom3 = croisement.crossover(chrom1, chrom2)
         
         test_is_chromosome(self, chrom3, len(chrom1))
         
         from1 = 0
         from2 = 0
         for x, a, b in zip(chrom3, chrom1, chrom2):
-            self.assertTrue(x == a or x == b, "création de nouveaux gènes interdite")
+            self.assertTrue(x == a or x == b, "Gene generation is forbidden")
             if x == a:
                 from1 += 1
             if x == b:
                 from2 += 1
-        self.assertTrue(from1 + from2 >= len(chrom3), "création de nouveaux gènes interdite")
-        self.assertNotEqual(chrom1, chrom3, "le chromosome est identique à l'un des parents")
-        self.assertNotEqual(chrom2, chrom3, "le chromosome est identique à l'un des parents")
+        self.assertTrue(from1 + from2 >= len(chrom3), "Gene generation is forbidden")
+        self.assertNotEqual(chrom1, chrom3, "The chromosome is identical to one of its parents")
+        self.assertNotEqual(chrom2, chrom3, "The chromosome is identical to one of its parents")
         
 @ddt
 class MutationTest(unittest.TestCase):
@@ -91,6 +91,6 @@ class MutationTest(unittest.TestCase):
             if a != b:
                 score += 1
                 
-        self.assertFalse(score > 1, "trop de mutations effectuées")
-        self.assertFalse(score == 0, "le chromosome n'a pas subi de mutations")
+        self.assertFalse(score > 1, "Too many mutations")
+        self.assertFalse(score == 0, "The chromosome has not been mutated")
         
