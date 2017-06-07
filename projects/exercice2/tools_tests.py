@@ -11,7 +11,7 @@ def test_is_chromosome(cls, chrom, size):
 
 class FittingTest(unittest.TestCase):
 
-    @patch('answer.get_solution')
+    @patch('answer.get_answer')
     def test_fitting(self, mock_function):
         import fitting
         key = "QweJWLgWLIhdvkwyHouO"

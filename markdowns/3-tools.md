@@ -29,11 +29,11 @@ An example of selection function would be :
  * Select the best 30% individuals
  * Randomly select 20% of the rest
 
-If only the best ones were to be kept (elitism), the risk is to head towards a local minimum without having the possibility to explore other potentially rewarding ways.
+If only the best ones were to be kept (elitism), the risk is to head towards a local extremum without having the possibility to explore other potentially rewarding ways.
 
 In the next exercise, we will implement the selection function.
 
-@[Chromosoms selection]({"stubs":["selection.py"], "command":"tools_tests.SelectionTest", "project":"exercice2"})
+@[Chromosomes selection]({"stubs":["selection.py"], "command":"tools_tests.SelectionTest", "project":"exercice2"})
 
 ## Genetic operators
 These tools will directly impact the genetic material of a new individual.
@@ -43,7 +43,7 @@ We now need to fill our population with a new generation.
 In order to create this generation, we will make individuals reproduce.
 During this step, the parents will be exchanging their genetic material to produce a child [Genetic recombination](https://en.wikipedia.org/wiki/Genetic_recombination)
 
-![Crossover of two chromosoms](/img/OnePointCrossover.svg "Crossover of two chromosoms")
+![Crossover of two chromosomes](/img/OnePointCrossover.svg "Crossover of two chromosomes")
 
 A solution is to take each parent 50% of their genetic material, making the crossover in the middle of the chromosome.
 For instance if the parents are `ABCDEFGH` and `1345678`, the child will be `ABCD5678`.

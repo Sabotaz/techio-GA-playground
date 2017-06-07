@@ -34,10 +34,10 @@ Bruteforcing it would be inefficient. Instead, we will try to guess the solution
 The first step is to create individuals for our base population.
 
 A chromosome is a set of genes. We could encode it in different ways :
- * A binary encoding : a binary string (set of 0s or 1s)
+ * a binary encoding : a binary string (set of 0s or 1s)
  * multiple characters encoding : a string of characters
 
-On the crossover step, we seek to have a wide genetic recombination. The binary encoding has a finer granularity for the creossing location but is not really natural and not fit for real data (for instance, modifying a certain bit in a floating number can result in invalid values).
+On the crossover step, we seek to have a wide genetic recombination. The binary encoding has a finer granularity for the crossing location but is not really natural and not fit for real data (for instance, modifying a certain bit in a floating number can result in invalid values).
 
 In practice, we will use a different encoding regarding the problem to solve.
 

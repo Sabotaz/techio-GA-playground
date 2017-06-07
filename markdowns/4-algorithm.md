@@ -21,7 +21,7 @@ Once the parents have been chosen the ``crossover(parent1, parent2)` function al
 Probability : from 0.1% to 1%
 Each child have a chance to have a randomly modified gene thanks to the `mutation(chromosome)` function.
 
-Finally, the `is_solution(chromosome)` function checks if the individual is solution to the problem (100% score).
+Finally, the `is_answer(chromosome)` function checks if the individual is solution to the problem (100% score).
 If there is no solution we go on the next generation (phase 2).
 
 ![Recap](/img/Schema_simple_algorithme_genetique.png "Recap")

@@ -3,7 +3,7 @@ import sys
 from answer import is_answer, get_mean_score
 # You can redefine these functions with the ones you wrote previously.
 # Another implementation is provided here.
-from codage import create_chromosome
+from encoding import create_chromosome
 from tools import selection, crossover, mutation
 
 def create_population(pop_size, chrom_size):
