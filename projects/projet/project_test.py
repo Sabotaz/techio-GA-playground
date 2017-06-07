@@ -30,14 +30,14 @@ class ProjectTest(unittest.TestCase):
             pass
     
     @data(
-        "Bravo !",
-        "Cette phrase est plus difficile.",
-        "Tu es VRAIMENT a l'aise avec les ALGORITHMES GENETIQUES !! Felicitations !",
+        "Well done !",
+        "This sentence is harder.",
+        "You REALLY understood GENETIC ALGORITHMS !! Congratulations !",
         "jNxbthOwkccnaiqpfooJmxfIBqZNuZJYMouIbHLbDRFAcaZhgExowygcfNonxmNUGYdITZJQXnqxgAEZHkaljGHGadgAxRIWArGV")
     def test_algorithme(self, solution):
         os.environ["SECRET_KEY"] = solution
         with patch('builtins.input', lambda: str(len(solution))):
             import algorithme
-            with capture(algorithme.algorithme) as output:
-                self.assertTrue(output == solution, "ce chromosome n'est pas la solution")
+            with capture(algorithme.algorithm) as output:
+                self.assertTrue(output == solution, "This chromosome is not a solution")
         
