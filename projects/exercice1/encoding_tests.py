@@ -11,6 +11,6 @@ class ChromosomeTest(unittest.TestCase):
             
     @data(38, 42, 72)
     def test_chromosome(self, value):
-        import codage
-        test_is_chromosome(self, codage.create_chromosome(value), value)
+        import encoding
+        test_is_chromosome(self, encoding.create_chromosome(value), value)
         

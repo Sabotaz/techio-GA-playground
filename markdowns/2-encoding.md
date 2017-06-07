@@ -62,4 +62,4 @@ In practice, we will use a different encoding regarding the problem to solve.
 
 In the following exercise, you will code the function creating a new individual. The chromosome will be stored as a string.
 
-@[chromosome encoding]({"stubs":["codage.py"], "command":"codage_tests.ChromosomeTest", "project":"exercice1"})
+@[chromosome encoding]({"stubs":["encoding.py"], "command":"encoding_tests.ChromosomeTest", "project":"exercice1"})

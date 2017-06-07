@@ -1,8 +1,7 @@
 import random
-from solution import get_score
+from answer import get_score
     
 def score(chrom):
-    # nombre flottant compris entre 0 et 1 suivant si le chromosome est mauvais ou bon
     # floating number between 0 and 1. The better the chromosome, the closer to 1
     # We coded the get_score(chrom) in the previous exercise
     return get_score(chrom)

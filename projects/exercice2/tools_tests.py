@@ -11,7 +11,7 @@ def test_is_chromosome(cls, chrom, size):
 
 class FittingTest(unittest.TestCase):
 
-    @patch('solution.get_solution')
+    @patch('answer.get_solution')
     def test_fitting(self, mock_function):
         import fitting
         key = "QweJWLgWLIhdvkwyHouO"
@@ -40,7 +40,7 @@ class SelectionTest(unittest.TestCase):
             "jmmqRZgmfcszPtXxusSG"]
         
         import selection
-        import solution
+        import answer
         
         select = selection.selection(blob)
         for x in select:
@@ -48,18 +48,18 @@ class SelectionTest(unittest.TestCase):
         
         self.assertTrue(len(select) >= 2, "Not enough selected chromosoms")
         self.assertTrue(len(select) < len(blob), "Too many selected chromosoms")
-        self.assertTrue(solution.get_mean_score(select) >= solution.get_mean_score(blob), "The selection is not good enough")
+        self.assertTrue(answer.get_mean_score(select) >= answer.get_mean_score(blob), "The selection is not good enough")
         
 @ddt
-class CroisementTest(unittest.TestCase):
+class CrossoverTest(unittest.TestCase):
     @data(
         ("AAAAAAAA", "BBBBBBBB"),
         ("VHFyYNasyaBVeFEdFPWy", "zNxISamKololUBZkMdBz"),
         ("xadgHOQkUvnYnBoJMNQgFieoTxpttzOVEFSaNpGx", "cmZpPCJSifHsQzJDSYYJzXaZFrRzZxlxmmyxWgvr"))
     @unpack
     def test_croisement(self, chrom1, chrom2):
-        import croisement
-        chrom3 = croisement.crossover(chrom1, chrom2)
+        import crossover
+        chrom3 = crossover.crossover(chrom1, chrom2)
         
         test_is_chromosome(self, chrom3, len(chrom1))
         

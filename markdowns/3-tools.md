@@ -55,7 +55,7 @@ Or we could do the crossover on multiple locations.
 
 ![Two-points crossover](/img/Computational.science.Genetic.algorithm.Crossover.Two.Point.svg "Two-points crossover")
 
-@[Chromosome crossover]({"stubs":["croisement.py"], "command":"tools_tests.CroisementTest", "project":"exercice2"})
+@[Chromosome crossover]({"stubs":["crossover.py"], "command":"tools_tests.CrossoverTest", "project":"exercice2"})
 
 ### Mutation
 In order to create new genetic material, some individuals will [mutate](https://en.wikipedia.org/wiki/Mutation).

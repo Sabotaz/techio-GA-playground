@@ -13,7 +13,7 @@ def get_score(chrom):
             score += 1
     return score / len(key)
     
-def est_solution(chrom):
+def is_answer(chrom):
     key = os.environ['SECRET_KEY']
     return key == chrom
     

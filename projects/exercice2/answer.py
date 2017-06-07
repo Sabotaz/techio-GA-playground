@@ -4,7 +4,7 @@ from string import ascii_letters
 
 alphabet = ascii_letters + " !'."
 
-def get_solution():
+def get_answer():
     pass
 
 def get_score(chrom):

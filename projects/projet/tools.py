@@ -1,5 +1,5 @@
 import random
-from solution import alphabet, get_score
+from answer import alphabet, get_score
 
 def get_letter():
     return random.choice(alphabet)
