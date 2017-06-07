@@ -43,7 +43,7 @@ We now need to fill our population with a new generation.
 In order to create this generation, we will make individuals reproduce.
 During this step, the parents will be exchanging their genetic material to produce a child [Genetic recombination](https://en.wikipedia.org/wiki/Genetic_recombination)
 
-![Crossover of two chromosoms](/img/OnePointCrossover.scg "Crossover of two chromosoms")
+![Crossover of two chromosoms](/img/OnePointCrossover.svg "Crossover of two chromosoms")
 
 A solution is to take each parent 50% of their genetic material, making the crossover in the middle of the chromosome.
 For instance if the parents are `ABCDEFGH` and `1345678`, the child will be `ABCD5678`.
