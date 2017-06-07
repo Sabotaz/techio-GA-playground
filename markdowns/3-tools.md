@@ -7,7 +7,7 @@ They make use of tools inspired by biology allowing the specie to evolve through
 
 This tool resemble the [natural selection](https://en.wikipedia.org/wiki/Natural_selection).
 
-![The giraffes able to eat high leaves are better at surviving](/img/Selection.svg "The giraffes able to eat high leaves are better at surviving")
+![The giraffes able to eat high leaves are better at surviving](/img/Selection.png "The giraffes able to eat high leaves are better at surviving")
 
 Each individual gets a fitting score, depending on the given problem.
 In this step, we will select individuals in order to create the next generation.

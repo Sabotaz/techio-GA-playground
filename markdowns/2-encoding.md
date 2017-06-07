@@ -43,7 +43,7 @@ In practice, we will use a different encoding regarding the problem to solve.
 
  * The Knapsack problem :
 
-> ![Knapsack problem](/img/Knapsack.svg "Knapsack problem")
+> ![Knapsack problem](/img/Knapsack.png "Knapsack problem")
 > The Knapsack problem : What boxes do we choose in order to maximize the carried weigth without exceeding 15kg?
 
 `0110001`, each bit is refering to an object and indicates if it has been placed in the bag.
