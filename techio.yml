@@ -9,6 +9,8 @@ plan:
     statement: markdowns/3-tools.md
   - title: Algorithm
     statement: markdowns/4-algorithm.md
+  - title: What Now?
+    statement: markdowns/5-conclusion.md
 projects:
   exercice1:
     root: /projects/exercice1

@@ -1,6 +1,6 @@
 # Tools
 
-Genetic algorithms bas themselves on natural selection, meaning the reproductive advantage of an individual that fits better in said environment.
+Genetic algorithms base themselves on natural selection, meaning the reproductive advantage of an individual that fits better in said environment.
 They make use of tools inspired by biology allowing the specie to evolve through generations.
 
 ## Selection
