@@ -29,8 +29,3 @@ If there is no solution we go on the next generation (phase 2).
 The goal of this exercise is to find the secret sentence using a genetic algorithm and the tools we created earlier.
 
 @[Genetic algorithm]({"stubs":["algorithm.py"], "command":"algorithm_test.AlgorithmTest", "project":"projet", "layout": "aside"})
-
-Here is an other example of genetic algorithm : the lander can must find its way to the landing platform.
-Its fitting score is calculated with the final distance to the landing platform.
-
-@[Mars Lander]({"stubs": ["genetic-lander-no-submodule/README.md"], "command": "visualisation.VisualisationTest", "project":"viewer-mars-lander"})
