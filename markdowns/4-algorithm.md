@@ -3,7 +3,7 @@
 
 1. Create the base population
 We create a random initial population. Each individual is is defined by its genetic material.
-We create a new indicidual with the previously declared `create_chromosome(size)` function.
+We create a new individual with the previously declared `create_chromosome(size)` function.
 2. Evaluation
 Each individual is scored on its fitting to the problem. This is done in the beginning of the selection.
 3. Selection
@@ -15,7 +15,7 @@ The number of individuals in the population can either be constant or vary over 
 
 On each reproduction :
  * Crossover
-The genetic materail of a child is a combination of the parents' (generally 50% of each parent's genetic material).
+The genetic material of a child is a combination of the parents' (generally 50% of each parent's genetic material).
 Once the parents have been chosen the ``crossover(parent1, parent2)` function allows the creation of the child.
  * Mutation
 Probability : from 0.1% to 1%
