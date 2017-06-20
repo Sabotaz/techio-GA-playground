@@ -28,5 +28,6 @@ You can also take a look at these problems:
 * [Game of Drones](https://www.codingame.com/multiplayer/bot-programming/game-of-drones) puzzle on CodinGame
 * [Fantastic Bits](https://www.codingame.com/multiplayer/bot-programming/fantastic-bits) puzzle on CodinGame
 * [Lab Rat Race Challenge](https://codegolf.stackexchange.com/questions/44707/lab-rat-race-an-exercise-in-genetic-algorithms) on StackExchange
+* [label]
 
 [label]: https://www.codingame.com/multiplayer/bot-programming/coders-strike-back
