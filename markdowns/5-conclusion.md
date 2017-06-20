@@ -20,6 +20,7 @@ A CodinGame puzzle where you have to land a mars rover and a flat surface. You d
 Here is an example of solution for solving this puzzle using a genetic algorithm.
 Its fitting score is calculated with the final distance to the landing platform.
 
+@[Mars Lander]({"stubs": ["genetic-lander-no-submodule/README.md"], "command": "visualisation.VisualisationTest", "project":"viewer-mars-lander"})
 
 You can also take a look at these problems:
 
