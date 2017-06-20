@@ -1,9 +1,8 @@
 # What to do next
 
 Know that you have basic knowledge of Genetic Algorithms the next step is to read more about GAs and try them out for yourself. Here are a few resources on GAs you might find useful:
-* [label]
-* [label]
-* [Magus' article](http://files.magusgeek.com/csb/csb_en.html) on how to solve the [label] puzzle on CodinGame
+
+* [Magus' article](http://files.magusgeek.com/csb/csb_en.html) on how to solve the [Coders Strike Back] puzzle on CodinGame
 * [Course on Genetic Algorithms](http://www.obitko.com/tutorials/genetic-algorithms/) with cool visual explanations by M. Obitko
 * [Another course on Genetic Algorithm](http://web.cs.ucdavis.edu/~vemuri/classes/ecs271/Genetic%20Algorithms%20Short%20Tutorial.htm) by Alexander Schatten
 * [This simulation](http://rednuht.org/genetic_cars_2/) of iterating to design the perfect car
@@ -27,8 +26,7 @@ You can also take a look at these problems:
 
 * [Game of Drones](https://www.codingame.com/multiplayer/bot-programming/game-of-drones) puzzle on CodinGame
 * [Fantastic Bits](https://www.codingame.com/multiplayer/bot-programming/fantastic-bits) puzzle on CodinGame
+* [Coders Strike Back] puzzle on CodinGame
 * [Lab Rat Race Challenge](https://codegolf.stackexchange.com/questions/44707/lab-rat-race-an-exercise-in-genetic-algorithms) on StackExchange
-* [label]
-* [label]
 
-[label]: https://www.codingame.com/multiplayer/bot-programming/coders-strike-back
+[Coders Strike Back]: https://www.codingame.com/multiplayer/bot-programming/coders-strike-back
