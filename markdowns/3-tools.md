@@ -1,6 +1,6 @@
 # Tools
 
-Genetic algorithms bas themselves on natural selection, meaning the reproductive advantage of an individual that fits better in said environment.
+Genetic algorithms base themselves on natural selection, meaning the reproductive advantage of an individual that fits better in said environment.
 They make use of tools inspired by biology allowing the specie to evolve through generations.
 
 ## Selection
@@ -49,7 +49,7 @@ A solution is to take each parent 50% of their genetic material, making the cros
 For instance if the parents are `ABCDEFGH` and `1345678`, the child will be `ABCD5678`.
 There is no change in the genes' places.
 
-There are other types of crossovers. 
+There are other types of crossovers.
 One can take 70% of the genetic material of a parent and 30% of the other.
 Or we could do the crossover on multiple locations.
 
