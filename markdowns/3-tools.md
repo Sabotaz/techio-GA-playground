@@ -11,9 +11,9 @@ This tool resemble the [natural selection](https://en.wikipedia.org/wiki/Natural
 
 Each individual gets a fitting score, depending on the given problem.
 In this step, we will select individuals in order to create the next generation.
-This selection can be done that way :
+This selection can be done that way:
  * A well fitted individual (high fitting score) has good chances at being selected
- * The lesser the fitting score, the lesser the chances at being selected
+ * The lower the fitting score, the lower the chances at being selected
 
 The first thing to do is to create a fitting function. It will score each individual.
 The function generally returns a floating number between 0 (bad score) and 1 (good score).
@@ -25,7 +25,7 @@ In this exercise, you will implement the fitting function. We will simply compar
 Once the fitting function has been defined, we can apply a selection on our population.
 The goal is to keep the best fitted individuals.
 
-An example of selection function would be :
+An example of selection function would be:
  * Select the best 30% individuals
  * Randomly select 20% of the rest
 

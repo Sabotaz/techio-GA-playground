@@ -1,13 +1,13 @@
 # What to do next
 
-Know that you have basic knowledge of Genetic Algorithms the next step is to read more about GAs and try them out for yourself. Here are a few resources on GAs you might find useful:
+Know that you have basic knowledge of Genetic Algorithms, the next step is to read more about GAs and try them out for yourself. Here are a few resources on GAs you might find useful:
 
 * [Magus' article](http://files.magusgeek.com/csb/csb_en.html) on how to solve the [Coders Strike Back] puzzle on CodinGame
 * [Course on Genetic Algorithms](http://www.obitko.com/tutorials/genetic-algorithms/) with cool visual explanations by M. Obitko
 * [Another course on Genetic Algorithm](http://web.cs.ucdavis.edu/~vemuri/classes/ecs271/Genetic%20Algorithms%20Short%20Tutorial.htm) by Alexander Schatten
 * [This simulation](http://rednuht.org/genetic_cars_2/) of iterating to design the perfect car
 
-And once you're done, take a look at [(Mars Lander)](https://www.codingame.com/training/easy/mars-lander-episode-1) :
+And once you're done, take a look at [(Mars Lander)](https://www.codingame.com/training/easy/mars-lander-episode-1):
 
 A CodinGame puzzle where you have to land a mars rover and a flat surface. You don't **have to** use GAs to solve it but you can
 
